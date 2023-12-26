@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSSL Connection</title>
+</head>
+<body>
+
+<script>
+    // Replace 'YOUR_API_ENDPOINT' with the actual API endpoint (IP address) provided by eSSL
+    const apiEndpoint = 'http://192.168.1.201/api';
+
+    // Make a sample API request using fetch
+    fetch(apiEndpoint)
+        .then(response => response.json())
+        .then(data => {
+            console.log('API Response:', data);
+            // Handle the API response as needed
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Handle errors
+        });
+</script>
+
+</body>
+</html>
